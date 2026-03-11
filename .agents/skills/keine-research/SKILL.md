@@ -154,7 +154,7 @@ Commit everything created in this workflow:
 
 ```sh
 git add reports/<report>.md docs/ docs/tags/
-git commit -m "research: <topic>"
+git commit -m "docs(report): <topic>"
 ```
 
 ### Phase 6 — Update topic map (if warranted)
