@@ -6,6 +6,17 @@ compatibility: Requires git, uv and Python
 
 # Keine Knowledge Base Management
 
+## Assets
+
+```
+references
+|-- TEMPLATE_ENTRY.md
+|-- TEMPLATE_TAG.md
+`-- TEMPLATE_TOPIC.md
+scripts
+`-- maintain_tags.py    — maintain tag index
+```
+
 ## Document Format
 
 ### Knowledge Entry (`docs/<yyyy-mm-dd-slug>.md`)
@@ -45,10 +56,6 @@ tags: [tag-a, tag-b]
 
 Body: structured overview, mindmap, or learning path linking to entries.
 
-## Available scripts
-
-- `scripts/maintain_tags.py` — maintain tag index
-
 ## Workflow
 
 For the task at hand, use the appropriate sub-skill:
@@ -57,6 +64,7 @@ For the task at hand, use the appropriate sub-skill:
 |---|---|
 | Create or edit a knowledge entry | `keine-update-entries` |
 | Create or edit a topic map | `keine-update-maps` |
+| Create a deep research report | `keine-research` |
 
 ### Finding entries
 

@@ -1,6 +1,7 @@
 ---
 name: keine-update-maps
 description: Use this skill when creating or editing a topic map in the Keine knowledge base. Trigger after ingesting a set of related entries on a topic, or when asked to summarize, compare, survey, or give an overview of a subject area. Also use when a user asks a broad question and you want to leave a synthesized overview for future agents or readers. Maps are different from entries — they synthesize rather than document.
+compatibility: Require `keine-manage` skill
 ---
 
 # Creating and Editing Topic Maps

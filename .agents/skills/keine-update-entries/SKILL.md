@@ -1,6 +1,7 @@
 ---
 name: keine-update-entries
 description: Use this skill when creating a new knowledge entry or editing an existing one in the Keine knowledge base. Trigger when asked to add, ingest, document, or update any piece of knowledge — a URL, PDF, book, concept, note, or research finding. Use this skill even when the user doesn't say "entry" — if they want to capture or update knowledge, this is the skill.
+compatibility: Require `keine-manage` skill
 ---
 
 # Creating and Editing Knowledge Entries
@@ -24,7 +25,7 @@ Format: `YYYY-MM-DD-short-descriptive-slug.md`. Use today's date. Keep the slug 
 
 ### 3. Write the file
 
-Use `references/TEMPLATE_ENTRY.md` as a guide. Fill all frontmatter fields:
+Fill all frontmatter fields:
 
 ```yaml
 ---
@@ -54,7 +55,7 @@ uv run scripts/maintain_tags.py
 
 ### 5. Commit
 
-Stage the new entry and any updated tag files:
+You *must* stage the new entry and any updated tag files:
 
 ```sh
 git add docs/<new-entry>.md docs/tags/
@@ -68,7 +69,7 @@ git commit -m "docs: add <title>"
 1. Find the entry — search by keyword or tag (see below)
 2. Edit content or frontmatter as needed
 3. If tags changed, re-run `uv run scripts/maintain_tags.py`
-4. Commit:
+4. You *must* commit:
    ```sh
    git add docs/<entry>.md docs/tags/
    git commit -m "docs: update <title>"
