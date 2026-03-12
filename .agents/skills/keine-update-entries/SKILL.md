@@ -47,11 +47,7 @@ For ingested content (URL, PDF, book), summarize in your own words — do not co
 
 ### 4. Update tags
 
-Run from the repo root after writing the file:
-
-```sh
-uv run scripts/maintain_tags.py
-```
+Run from the repo root after writing the file `scripts/maintain_tags.py`
 
 ### 5. Commit
 
@@ -68,7 +64,7 @@ git commit -m "docs: add <title>"
 
 1. Find the entry — search by keyword or tag (see below)
 2. Edit content or frontmatter as needed
-3. If tags changed, re-run `uv run scripts/maintain_tags.py`
+3. If tags changed, re-run `scripts/maintain_tags.py`
 4. You *must* commit:
    ```sh
    git add docs/<entry>.md docs/tags/

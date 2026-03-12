@@ -39,11 +39,7 @@ Body structure:
 
 ### Tag Index (`docs/tags/<slug>.md`)
 
-Auto-maintained. **Do not edit manually.** Run:
-
-```sh
-uv run scripts/maintain_tags.py
-```
+Auto-maintained. **Do not edit manually.** Run `scripts/maintain_tags.py`
 
 ### Topic Map (`docs/maps/<slug>.md`)
 

@@ -82,11 +82,7 @@ search each facet deliberately rather than doing a single broad search.
 Do not create entries for every result — only for knowledge worth keeping. A good rule: if a
 future agent researching a related question would benefit from finding this entry, create it.
 
-After creating new entries, run tag maintenance:
-
-```sh
-uv run scripts/maintain_tags.py
-```
+After creating new entries, run tag maintenance `scripts/maintain_tags.py`
 
 ### Phase 4 — Write the report
 
